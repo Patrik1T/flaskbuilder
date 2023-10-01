@@ -39,7 +39,7 @@ class Contact(Model):
     gender_id = Column(Integer, ForeignKey("gender.id"), nullable=False)
     gender = relationship("Gender")
     note = Column(Text)
-    email = Column(String(150))  # Nově přidaný sloupec pro email
+    email = Column(String(150))
 
     def __repr__(self):
         return self.name
